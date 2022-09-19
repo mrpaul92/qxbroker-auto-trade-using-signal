@@ -58,9 +58,8 @@ const log = console.log;
     let data = item.split(" ");
     return  {
       time: data[0],
-      from: data[1],
-      to: data[2],
-      type: data[3] === "CALL" ? "BUY" : "SELL",
+      pair: data[1],
+      type: data[2] === "CALL" ? "BUY" : "SELL",
       completed: false,
     }
   });
