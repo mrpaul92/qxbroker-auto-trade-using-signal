@@ -89,4 +89,9 @@ const log = console.log;
       }
     }
   }, 500);
+
+  setInterval(async () => {
+    // refresh the page
+    await page.reload();
+  }, 1800000);
 })();
